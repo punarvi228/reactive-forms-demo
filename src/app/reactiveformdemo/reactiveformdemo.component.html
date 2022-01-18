@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <h1 class="form-heading">Final Reverse Worksheet</h1>
+
+    <div class="form-container-wrapper">
+        <form [formGroup]="reverseWorksheetForm">
+            <div class="closer">
+                <label for="closer">Closer</label>
+                <select class="custom-select" formControlName="closerSelect">
+                    <option value="">Please Select</option>
+                    <option *ngFor="let _closerDropdownData of closerDropdownData">{{_closerDropdownData}}</option>
+                  </select>
+            </div>
+            <div class="loan-information">
+                <label for="loaninformation">LoanInformation</label>
+            </div>
+        </form>
+    </div>
+</div>

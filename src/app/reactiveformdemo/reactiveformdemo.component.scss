@@ -1,0 +1,36 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    .form-heading {
+        text-align: center;
+        padding: 0.5vw 0;
+    }
+    .form-container-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+        label {
+            display: block;
+            padding-bottom: 7px;
+            font-weight: 900;
+            font-size: 16px;
+        }
+        select {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #000000;
+            &:focus-visible {
+                outline: none;
+            }
+        }
+        .closer {
+            width: 50%;
+        }
+        .loan-information {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
