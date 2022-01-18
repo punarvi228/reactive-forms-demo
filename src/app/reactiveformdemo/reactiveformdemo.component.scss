@@ -10,7 +10,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 2vw;
+        padding: 2vw 5vw;
         label {
             display: block;
             padding-bottom: 7px;
@@ -25,12 +25,52 @@
                 outline: none;
             }
         }
+        table {
+            width: 100%;
+            border: 1px solid #000000;
+            border-collapse: collapse;
+            tr {
+                border: 1px solid #000000;
+                td {
+                    border: 1px solid #000000;
+                    padding: 10px;
+                }
+                th {
+                    border: 1px solid #000000;
+                    padding: 10px;
+                }
+            }
+        }
         .closer {
             width: 50%;
         }
         .loan-information {
             width: 100%;
             margin-top: 10px;
+            table {
+                tr {
+                    th {
+                        width: 80px;
+                    }
+                    td {
+                        width: calc(100% - 80px);
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .first-table {
+            width: 100%;
+            margin-top: 10px;
+            table {
+                tr {
+                    th {
+                        text-align: left;
+                    }
+                }
+            }
         }
     }
 }

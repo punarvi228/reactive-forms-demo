@@ -8,10 +8,101 @@
                 <select class="custom-select" formControlName="closerSelect">
                     <option value="">Please Select</option>
                     <option *ngFor="let _closerDropdownData of closerDropdownData">{{_closerDropdownData}}</option>
-                  </select>
+                </select>
             </div>
             <div class="loan-information">
                 <label for="loaninformation">LoanInformation</label>
+                <table>
+                    <tr>
+                        <th>Date:</th>
+                        <td>
+                            <input type="date" formControlName="dateType">
+                        </td>
+                        <th>Loan Officer:</th>
+                        <td><input type="text" formControlName="loanOfficer"></td>
+                    </tr>
+                    <tr>
+                        <th>Borrower:</th>
+                        <td><input type="text" formControlName="borrower"></td>
+                        <th>Loan#:</th>
+                        <td><input type="text" formControlName="loanNo"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="first-table">
+                <table>
+                    <tr>
+                        <th>Lock Type</th>
+                        <th>MIP Percentage</th>
+                        <th>Product Type</th>
+                        <th>Margin/Rate</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="custom-select" formControlName="lockTypeDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _lockType of lockType">{{_lockType}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="custom-select" formControlName="mipPercentageDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _mipPercentage of mipPercentage">{{_mipPercentage}}</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <select class="custom-select" formControlName="productTypeDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _productType of productType">{{_productType}}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="custom-select" formControlName="marginRateDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _marginRate of marginRate">{{_marginRate}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Pricing Exception</th>
+                        <th colspan="2">Exception Type</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select class="custom-select" formControlName="pricingEcceptionDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _pricingEcception of pricingEcception">{{_pricingEcception}}</option>
+                            </select>
+                        </td>
+                        <td colspan="2">
+                            <select class="custom-select" formControlName="exceptionTypeDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _exceptionType of exceptionType">{{_exceptionType}}</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th colspan="2">Approved by</th>
+                        <th colspan="2">Product Change</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <select class="custom-select" formControlName="approvedByDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _approvedBy of approvedBy">{{_approvedBy}}</option>
+                            </select>
+                        </td>
+                        <td colspan="2">
+                            <select class="custom-select" formControlName="productChangeDropDown">
+                                <option value="">Please Select</option>
+                                <option *ngFor="let _productChange of productChange">{{_productChange}}</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </form>
     </div>
