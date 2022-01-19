@@ -24,7 +24,11 @@ export class ReactiveformdemoComponent implements OnInit {
 
   approvedBy:any = ["Richard Thorpe","Patrick Lambrecht","David Peskin","Oscar Moure","Eric Ellsworth"];
 
-  productChange:any = ["Yes*","No"]
+  productChange:any = ["Yes*","No"];
+
+  // final payment plan 
+  finalPlanData:any = ["Line Of Credit","Cash Draw","Modified Term","Term","Modified Tenure","Tenure"];
+  // ends final payment plan 
   
   constructor(public fb: FormBuilder) { }
 
@@ -44,6 +48,21 @@ export class ReactiveformdemoComponent implements OnInit {
     pricingEcceptionDropDown:[],
     exceptionTypeDropDown:[],
     approvedByDropDown:[],
-    productChangeDropDown:[]
+    productChangeDropDown:[],
+    formControlName:[],
+    cashD:[],
+    mt:[],
+    term:[],
+    mTenure:[],
+    tenute:[],
+    closingDate:[],
+    timeN:[],
+    placeN:[],
+    notary:[],
+    phoneNum:[],
+    Origination:[],
+    loanC:[],
+    hotCollected:[],
+    loanSign:[]
   })
 }

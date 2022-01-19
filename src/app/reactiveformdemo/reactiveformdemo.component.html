@@ -104,6 +104,183 @@
                     </tr>
                 </table>
             </div>
+
+            <div class="final-payment">
+                <label for="Final Payment Plan" class="fpplan">Final Payment Plan</label>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" formControlName="loc" />
+                            <label for="">Line Of Credit</label>
+                        </td>
+                        <td>
+                            <label for="" class="dolar-class">$</label>
+                            <input type="text" />
+                        </td>
+                        <td width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" formControlName="cashD" />
+                            <label for="">Cash Draw</label>
+                        </td>
+                        <td>
+                            <label for="" class="dolar-class">$</label>
+                            <input type="text" />
+                        </td>
+                        <td width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" formControlName="mt" />
+                            <label for="">Modified Term</label>
+                        </td>
+                        <td>
+                            <label for="" class="dolar-class">$</label>
+                            <input type="text" />
+                            <label for="">per month</label>
+                        </td>
+                        <td width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" formControlName="term" />
+                            <label for="">Term</label>
+                        </td>
+                        <td>
+                            <label for="" class="dolar-class">$</label>
+                            <input type="text" />
+                            <label for="">per month</label>
+                        </td>
+                        <td width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" formControlName="mTenure" />
+                            <label for="">Modified Tenure</label>
+                        </td>
+                        <td>
+                            <label for="" class="dolar-class">$</label>
+                            <input type="text" />
+                            <label for="">per month</label>
+                        </td>
+                        <td width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" formControlName="tenute" />
+                            <label for="">Tenure</label>
+                        </td>
+                        <td>
+                            <label for="" class="dolar-class">$</label>
+                            <input type="text" />
+                            <label for="">per month</label>
+                        </td>
+                        <td width="150"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="closing-information">
+                <label for="">Closing Information</label>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">Closing Date:</label>
+                        </td>
+                        <td>
+                            <input type="date" formControlName="closingDate">
+                        </td>
+                        <td>
+                            <label for="">Time:</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="time" formControlName="timeN">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Place:</label>
+                        </td>
+                        <td colspan="4">
+                            <input type="text" class="placeCl" formControlName="placeN">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Notary:</label>
+                        </td>
+                        <td>
+                            <input type="text" formControlName="notary">
+                        </td>
+                        <td>
+                            <label for="">Phone#:</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" formControlName="phoneNum">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="">Loan Officer Attending Closing:</label>
+                        </td>
+                        <td>
+                            <label for="">Yes</label>
+                            <input type="checkbox">
+
+                        </td>
+                        <td>
+                            <label for="">No</label>
+                            <input type="checkbox">
+
+                        </td>
+                        <td colspan="2">
+                            <label for="">Must be completed</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="notes">
+                <label for="">Notes</label>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">Origination : $</label>
+                            <input type="text" formControlName="Origination">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Lender Credit : $</label>
+                            <input type="text" formControlName="loanC">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">HOI Collected : $</label>
+                            <input type="text" formControlName="hotCollected">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="textareatd">
+                            <textarea name="" id="" cols="30" rows="10">
+                                Repairs: Yes or No: 
+                                Total Repair Set Aside $:
+                            </textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="signature">
+                <label for="">Loan Officer Signature</label>
+                <input type="text" formControlName="loanSign">
+            </div>
         </form>
     </div>
 </div>
