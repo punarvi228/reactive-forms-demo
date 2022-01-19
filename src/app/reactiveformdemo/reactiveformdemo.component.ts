@@ -50,6 +50,7 @@ export class ReactiveformdemoComponent implements OnInit {
     approvedByDropDown:[],
     productChangeDropDown:[],
     formControlName:[],
+    loc:[],
     cashD:[],
     mt:[],
     term:[],
